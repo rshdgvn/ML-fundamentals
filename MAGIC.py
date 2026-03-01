@@ -31,7 +31,7 @@ for label in cols[:-1]:
   plt.legend()
   plt.show()
 
-train, valid, test = np.split(df.sample(frac=1), [int(0.6 * len(df)), int(0.8 * len(df))])y
+train, valid, test = np.split(df.sample(frac=1), [int(0.6 * len(df)), int(0.8 * len(df))])
 
 train_data, X_train, y_train = scale_dataset(train, oversample=True)
 valid_data, X_valid, y_valid = scale_dataset(valid, oversample=False)

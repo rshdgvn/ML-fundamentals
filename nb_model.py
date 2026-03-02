@@ -1,4 +1,5 @@
 from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import classification_report
 
 nb_model = GaussianNB()
 nb_model = nb_model.fit(X_train, y_train)
